@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Slider</title>
+<style>
+    .slider {
+        width: 400px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+    .slides {
+        display: flex;
+        text-align: center;
+        transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+        flex: 0 0 auto;
+        width: 400px;
+        height: 350px;
+    }
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+    #prev {
+        left: 0;
+    }
+    #next {
+        right: 0;
+    }
+</style>
+</head>
+<body>
+<h1>Basic Slider</h1>
+<div class="slider">
+    <div class="slides">
+        <div class="slide" style="background-color: rgb(69, 202, 36);">Slide No.1</div>
+        <div class="slide" style="background-color: rgb(160, 33, 111);">Slide No.2</div>
+        <div class="slide" style="background-color: rgb(24, 173, 173);">Slide No.3</div>
+       
+    </div>
+    <button id="prev" onclick="moveSlide(-1)">Prev</button>
+    <button id="next" onclick="moveSlide(1)">Next</button>
+</div>
+
+<script>
+    let slideIndex = 0;
+
+    function moveSlide(n) {
+        const slides = document.querySelectorAll('.slide');
+        const slidesCount = slides.length;
+        slideIndex = (slideIndex + n + slidesCount) % slidesCount;
+        const slideWidth = slides[0].offsetWidth;
+        document.querySelector('.slides').style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+    }
+</script>
+
+</body>
+</html>
