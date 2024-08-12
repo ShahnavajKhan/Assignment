@@ -1,0 +1,98 @@
+
+.King {
+    display: flex;
+    margin: 100px;
+}
+.container-main{
+    width: 400px;
+    height: 310px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    background-color: #cfcaca;
+    border-radius: 25px;
+    overflow: hidden;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+  }
+  .container {
+    width: 380px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    background-color: #eae0e0;
+    border-radius: 15px;
+    overflow: hidden;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .header {
+    width: 350px;
+    height: 30px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    text-align: ;
+    border-radius: 15px 15px 15px 15px; 
+    display: flex;
+    margin: 10px;
+
+  }
+  .navfont {
+    margin-top: 9px;
+    font-size: large;
+    font-weight: bold;
+
+  }
+  .footfont {
+    margin-top: 8px;
+  }
+
+  .login-button {
+    display: block;
+    width: 35%;
+    height: 30px;
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d1d7dd;
+    color: #212020;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 160px;
+    margin-top: 2px;
+    font-weight: 700;
+  }
+  
+
+  
+  .content {
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+    
+  }
+  
+  .page-preview {
+    margin-bottom: 20px;
+    
+  }
+  .pubfont {
+    margin: 45px;
+  }
+  
+  .footer {
+    background-color: #f8f9fa;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px; 
+    border-top: 1px solid #ddd;
+    background-color: #007bff;
+    color: #fff;
+    font-size: large;
+    font-weight: 600;
+    width: 350px;
+    height: 30px;
+    margin: 10px;
+  }
+  
