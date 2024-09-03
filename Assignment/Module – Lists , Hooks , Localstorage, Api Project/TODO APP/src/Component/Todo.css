@@ -1,0 +1,95 @@
+/* Container for the whole app */
+.app-container {
+  background-color: white; /* Background color */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Wrapper for the todo app */
+.todo-wrapper {
+  background-color: #272E48; /* Dark background for the app */
+  width: 360px; /* Fixed width for the app */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the wrapper */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+/* Heading */
+h4 {
+  color: #FFFFFF; /* White text color */
+  margin-bottom: 20px; /* Space below heading */
+  text-align: center; /* Centered text */
+}
+
+/* Input field for new todos */
+.todo-input {
+  border: 2px solid #FFFFFF; /* White border */
+  background-color: #272E48; /* Match background */
+  color: #FFFFFF; /* White text color */
+  border-radius: 7px; /* Rounded corners */
+  width: calc(100% - 22px); /* Full width with padding */
+  padding: 10px; /* Padding inside input */
+  margin-bottom: 10px; /* Space below input */
+  box-sizing: border-box; /* Include border and padding in width */
+}
+
+/* Add/Update button */
+.todo-button {
+  border-radius: 6px; /* Rounded corners */
+  background-color: #FFFFFF; /* White background */
+  border: 2px solid #FFFFFF; /* White border */
+  color: #000000; /* Black text color */
+  padding: 10px; /* Padding inside button */
+  cursor: pointer; /* Pointer cursor on hover */
+  width: 100%; /* Full width */
+  margin-bottom: 15px; /* Space below button */
+  font-size: 16px; /* Slightly larger font size */
+}
+
+/* List items */
+.todo-item {
+  background-color: #7932ca; /* Light blue background */
+  color: #FFFFFF; /* White text color */
+  border-radius: 7px; /* Rounded corners */
+  padding: 10px; /* Padding inside item */
+  margin-bottom: 10px; /* Space between items */
+  display: flex; /* Flex container for alignment */
+  justify-content: space-between; /* Space between text and icons */
+  align-items: center; /* Center items vertically */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Delete All button */
+.delete-all-button {
+  background-color: #FFFFFF; /* White background */
+  border-radius: 7px; /* Rounded corners */
+  border: none; /* Remove default border */
+  padding: 10px; /* Padding inside button */
+  cursor: pointer; /* Pointer cursor on hover */
+  color: #000000; /* Black text color */
+  font-size: 16px; /* Slightly larger font size */
+}
+
+/* Style for icons inside list items */
+.todo-item .MuiIconButton-root {
+  color: #FFFFFF; /* White color for icons */
+  font-size: 20px; /* Adjust icon size */
+  margin-left: 10px; /* Space between icons */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.todo-item .MuiIconButton-root:hover {
+  color: #FFD700; /* Change color on hover */
+}
+
+/* Empty list message */
+.empty-message {
+  color: #FFFFFF; /* White text color */
+  text-align: center; /* Centered text */
+  font-size: 16px; /* Font size */
+  margin-top: 10px; /* Space above message */
+}

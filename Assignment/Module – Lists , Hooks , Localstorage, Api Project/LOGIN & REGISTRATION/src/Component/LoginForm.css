@@ -1,0 +1,30 @@
+/* Custom styles for LoginForm component */
+
+/* Center the modal title */
+.modal-title {
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Center the form title */
+  h1 {
+    color: #007bff; /* Bootstrap primary color */
+  }
+  
+  /* Style the button to open the modal */
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  /* Style the modal footer buttons */
+  .modal-footer .btn-link {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Add padding to the modal body */
+  .modal-body {
+    padding: 20px;
+  }
+  

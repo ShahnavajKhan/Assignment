@@ -1,0 +1,45 @@
+/* Container styling */
+.container {
+    background-color: rgb(174, 214, 27);
+    height: 450px;
+    width: 700px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title styling */
+  .title {
+    color: rgba(49, 38, 38, 0.644);
+    padding: 30px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* List group styling */
+  .list-group {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+  }
+  
+  /* List item styling */
+  .list-item {
+    background-color: white;
+    height: 40px;
+    width: 400px;
+    text-align: center;
+    padding-top: 7px;
+    margin: 20px auto; /* Center the items and add vertical margin */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Icon styling */
+  .check-icon {
+    height: 30px;
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
